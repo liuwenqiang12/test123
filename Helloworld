@@ -1,0 +1,34 @@
+/*PGM名：OurKarel
+*author: Tony Liu
+*description:
+*date:
+*/
+
+Import Standford. Karel.*; 
+Public Class OurKarel extands Karel {
+Public void run() {     //方法，调用不同的方法去执行相应的动作。
+Move();
+Pickbeeper();
+Move();
+Turnleft();
+Move();
+Turnright();
+Move();
+Putbeeper();
+Move();
+}
+}
+
+//创造一个New方法turnright
+Private void turnright() {           
+Turnleft();
+Turnleft();
+Turnleft();
+}
+
+分析：
+/* 定义一个run public 方法，程序进来会先找到它，再去按步骤执行它的函数体；
+*OurKarel类继承与原始的Karel类；
+*先导入预定义与Karel相关的东西；
+*程序要不仅计算机能读懂，执行对，人能清楚的读懂更重要；
+*/
